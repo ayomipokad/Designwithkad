@@ -470,6 +470,34 @@ main {
 ══════════════════════════════════════ */
 .resources-page { background: var(--bg-light); min-height: 100vh; }
 .resources-container { padding: 80px 60px; }
+
+.resources-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 24px;
+}
+.resources-header-text { flex: 1; }
+.all-lessons-btn {
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 28px;
+    background: var(--dark-blue);
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 50px;
+    white-space: nowrap;
+    transition: background 0.2s, transform 0.2s;
+}
+.all-lessons-btn:hover {
+    background: var(--primary-blue);
+    transform: translateY(-2px);
+}
+
 .resources-desc {
     font-size: 15px;
     color: #555;
@@ -643,6 +671,8 @@ footer { background: var(--dark-blue); padding: 60px 60px 0; }
     .nav-links a { display: block; padding: 14px 0; font-size: 16px; }
     .about, .host, .testimonials, .faq,
     .outline-container, .resources-container { padding-left: 24px; padding-right: 24px; }
+    .resources-header { flex-direction: column; align-items: flex-start; }
+    .all-lessons-btn { width: 100%; text-align: center; margin-top: 8px; }
     .testimonials-grid { grid-template-columns: 1fr; }
     .resources-grid    { grid-template-columns: 1fr 1fr; }
     .footer-content    { grid-template-columns: 1fr; gap: 36px; }
